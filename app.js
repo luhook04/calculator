@@ -24,7 +24,12 @@ const operate = (func) => {
 
 // updates display to text content of clicked button
 const updateDisplay = (e) => {
-  display.textContent += e.target.textContent;
+  if (display.textContent === '0') {
+    display.textContent = e.target.textContent;
+  }
+  else {
+    display.textContent += e.target.textContent;
+  }
 };
 
 // applys the updateDisplay function to each number on click
