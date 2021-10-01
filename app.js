@@ -2,18 +2,13 @@
 const display = document.querySelector('#display');
 const equal = document.querySelector('#equal');
 const clearBtn = document.querySelector('#clear');
-const multBtn = document.querySelector('#multiply');
-const addBtn = document.querySelector('#add');
-const subBtn = document.querySelector('#subtract');
-const divBtn = document.querySelector('#divide');
 
 let inputArray = [];
 let operatorArray = [];
 let numberArray = [];
-let userNum;
 
 // select all buttons with a number and operand
-const numbers = document.querySelectorAll('.numbers button');
+const numbers = document.querySelectorAll('.numbers');
 const operators = document.querySelectorAll('.operators button');
 
 // basic math functions
@@ -122,7 +117,7 @@ equal.addEventListener('click', function() {
     operatorArray.length = 0;
   }
   else {
-    console.log('Invalid Input');
+    alert("I don't understand the input");
     inputArray.length = 0;
     numberArray.length = 0;
     operatorArray.length = 0;

@@ -1,16 +1,25 @@
 .numbers {
+}
+
+.buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
   column-gap: 10px;
   width: 50%;
 }
 
 .operators {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 5px;
-  width: 50%;
+  width: 25%;
+  row-gap: 5px;
+  column-gap: 5px;
 }
 
+.operators button {
+  background-color: aqua;
+}
 #display {
   width: 50%;
   text-align: right;
